@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExampleProjectDDD.Shared.Abstraction\ExampleProjectDDD.Shared.Abstraction.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Primitives\" />
+  </ItemGroup>
+
+</Project>
