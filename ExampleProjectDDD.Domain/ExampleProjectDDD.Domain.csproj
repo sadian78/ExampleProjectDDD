@@ -10,8 +10,4 @@
     <ProjectReference Include="..\ExampleProjectDDD.Shared.Abstraction\ExampleProjectDDD.Shared.Abstraction.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Primitives\" />
-  </ItemGroup>
-
 </Project>

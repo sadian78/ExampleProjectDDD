@@ -1,12 +1,22 @@
-﻿namespace ExampleProjectDDD.Domain.Entities.CourseManagment
+﻿using ExampleProjectDDD.Domain.Primitives;
+using ExampleProjectDDD.Domain.ValueObject;
+
+namespace ExampleProjectDDD.Domain.Entities.CourseManagment
 {
-    public class CourseCatalog
+    public class CourseCatalog : BaseEntity
     {
-        public int ID { get; set; }
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public Course Course {  get; set; }
-        public int CourseID {  get; set; }
-        public List<Lesson> Lessons { get; set; }
+        public CourseCatalog(BaseId id) : base(id) { }
+
+        internal CourseCatalog(BaseId id, Title title, Description description, BaseId courseId) : base(id)
+        {
+            _title = title;
+            _description = description;
+            _courseId = courseId;
+        }
+
+        private Title _title;
+        private Description _description;
+        private BaseId _courseId;
+        private LinkedList<Lesson> _lessons;
     }
 }

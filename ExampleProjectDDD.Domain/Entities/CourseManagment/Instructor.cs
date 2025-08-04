@@ -1,10 +1,20 @@
-﻿namespace ExampleProjectDDD.Domain.Entities.CourseManagment
+﻿using ExampleProjectDDD.Domain.Primitives;
+using ExampleProjectDDD.Domain.ValueObject;
+
+namespace ExampleProjectDDD.Domain.Entities.CourseManagment
 {
-    public class Instructor
+    public class Instructor : BaseEntity
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public string Bio { get; set; }
-        public List<Course> Courses { get; set; }
+        public Instructor(BaseId id) : base(id) { }
+
+        public Instructor(Name name, Bio bio,BaseId id) : base(id)
+        {
+            _name = name;
+            _bio = bio;
+        }
+
+        private Name _name;
+        private Bio _bio;
+        private LinkedList<Course> _courses;
     }
 }
