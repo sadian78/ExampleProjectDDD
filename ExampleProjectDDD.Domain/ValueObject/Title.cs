@@ -1,4 +1,4 @@
-﻿using ExampleProjectDDD.Domain.Exceptions;
+﻿using ExampleProjectDDD.Domain.Exceptions.CourseExceptions;
 
 namespace ExampleProjectDDD.Domain.ValueObject
 {

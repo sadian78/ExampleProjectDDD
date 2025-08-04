@@ -1,4 +1,4 @@
-﻿using ExampleProjectDDD.Domain.Primitives;
+﻿using ExampleProjectDDD.Domain.Exceptions.CourseExceptions;
 using ExampleProjectDDD.Domain.ValueObject;
 using ExampleProjectDDD.Shared.Abstraction.Domain;
 
@@ -25,5 +25,38 @@ namespace ExampleProjectDDD.Domain.Entities.CourseManagment
         private BaseId _instructor_ID;
         private LinkedList<CourseCatalog> _coursCataloges;
         private LinkedList<CourseAttendee> _coursAttendees;
+
+        public void AddCourseAttendee(CourseAttendee courseAttendee)
+        {
+            if (courseAttendee == null)
+            {
+                throw new CourseAttendeeNullException();
+            }
+            var courseAttendeeExist = _coursAttendees.Any(a => a.Id == courseAttendee.Id);
+            if (courseAttendeeExist)
+            {
+                throw new CourseAttendeeExistException();
+            }
+            _coursAttendees.AddLast(courseAttendee);
+        }
+
+        public CourseAttendee GetCourseAttendee(BaseId courseAttendeeId)
+        {
+            var attendee = _coursAttendees.SingleOrDefault(c => c.Id == courseAttendeeId);
+            if (attendee == null)
+            {
+                throw new CourseAttendeeAlreadyExistException();
+            }
+            return attendee;
+        }
+
+        public void RemoveCourseAttendee(BaseId courseAttendeeId)
+        {
+            var courseAttendee = GetCourseAttendee(courseAttendeeId);
+            if (courseAttendee != null)
+            {
+                _coursAttendees.Remove(courseAttendee);
+            }
+        }
     }
 }
