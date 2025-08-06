@@ -14,5 +14,16 @@ namespace ExampleProjectDDD.Shared.Abstraction.Domain
             Version++;
             _isIncremented = true;
         }
+        private List<IDomainEvent> _events = new();
+        public IEnumerable<IDomainEvent> Events => _events;
+        protected void RaiseDomainEvent(IDomainEvent @event)
+        {
+            if(!_events.Any()&& !_isIncremented)
+            {
+                Version++;
+                _isIncremented = true;
+            }
+            _events.Add(@event);
+        }
     }
 }
