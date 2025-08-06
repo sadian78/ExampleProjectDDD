@@ -1,9 +1,4 @@
-﻿using ExampleProjectDDD.Domain.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ExampleProjectDDD.Domain.Exceptions.CourseExceptions;
 
 namespace ExampleProjectDDD.Domain.ValueObject.Course
 {
