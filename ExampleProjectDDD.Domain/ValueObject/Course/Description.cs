@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExampleProjectDDD.Domain.ValueObject
+namespace ExampleProjectDDD.Domain.ValueObject.Course
 {
     public record Description
     {

@@ -1,6 +1,6 @@
 ﻿using ExampleProjectDDD.Domain.Exceptions.CourseExceptions;
 
-namespace ExampleProjectDDD.Domain.ValueObject
+namespace ExampleProjectDDD.Domain.ValueObject.Course
 {
     public record Title
     {

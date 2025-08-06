@@ -1,5 +1,6 @@
 ﻿using ExampleProjectDDD.Domain.Exceptions.CourseExceptions;
 using ExampleProjectDDD.Domain.ValueObject;
+using ExampleProjectDDD.Domain.ValueObject.Course;
 using ExampleProjectDDD.Shared.Abstraction.Domain;
 
 namespace ExampleProjectDDD.Domain.Entities.CourseManagment

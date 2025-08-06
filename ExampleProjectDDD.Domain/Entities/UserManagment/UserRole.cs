@@ -1,11 +1,17 @@
-﻿
+﻿using ExampleProjectDDD.Domain.Primitives;
+using ExampleProjectDDD.Domain.ValueObject;
+
 namespace ExampleProjectDDD.Domain.Entities.UserManagment
 {
-    public class UserRole
+    public class UserRole : BaseEntity
     {
-        public User User { get; set; }
-        public Guid UserID { get; set; }
-        public Role Role { get; set; }
-        public int RoleID { get; set; }
+        public UserRole(BaseId id, BaseId userID, BaseId roleID) : base(id)
+        {
+            _userID = userID;
+            _roleID = roleID;
+        }
+
+        public BaseId _userID { get; set; }
+        public BaseId _roleID { get; set; }
     }
 }

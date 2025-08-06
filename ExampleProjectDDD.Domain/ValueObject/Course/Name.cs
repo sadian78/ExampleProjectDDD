@@ -1,7 +1,6 @@
 ﻿using ExampleProjectDDD.Domain.Exceptions.UserExceptions;
-using System.Xml.Linq;
 
-namespace ExampleProjectDDD.Domain.ValueObject
+namespace ExampleProjectDDD.Domain.ValueObject.Course
 {
     public record Name
     {

@@ -1,5 +1,4 @@
-﻿
-namespace ExampleProjectDDD.Domain.ValueObject
+﻿namespace ExampleProjectDDD.Domain.ValueObject.Course
 {
     public record Price
     {

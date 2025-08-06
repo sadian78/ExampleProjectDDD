@@ -1,5 +1,6 @@
 ﻿using ExampleProjectDDD.Domain.Primitives;
 using ExampleProjectDDD.Domain.ValueObject;
+using ExampleProjectDDD.Domain.ValueObject.Course;
 
 namespace ExampleProjectDDD.Domain.Entities.CourseManagment
 {

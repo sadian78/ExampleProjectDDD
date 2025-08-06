@@ -1,6 +1,6 @@
 ﻿using ExampleProjectDDD.Domain.Exceptions.UserExceptions;
 
-namespace ExampleProjectDDD.Domain.ValueObject
+namespace ExampleProjectDDD.Domain.ValueObject.Course
 {
     public record Bio
     {
