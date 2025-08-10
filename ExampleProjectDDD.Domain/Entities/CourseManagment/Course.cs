@@ -1,4 +1,5 @@
-﻿using ExampleProjectDDD.Domain.Exceptions.CourseExceptions;
+﻿using ExampleProjectDDD.Domain.DomainEvents;
+using ExampleProjectDDD.Domain.Exceptions.CourseExceptions;
 using ExampleProjectDDD.Domain.ValueObject;
 using ExampleProjectDDD.Domain.ValueObject.Course;
 using ExampleProjectDDD.Shared.Abstraction.Domain;
@@ -18,6 +19,7 @@ namespace ExampleProjectDDD.Domain.Entities.CourseManagment
             _title = title;
             _price = price;
             _instructor_ID = instructor_ID;
+            RaiseDomainEvent(new NewCourseCreatedEvent(this));
         }
 
         private Description _description;
@@ -39,6 +41,7 @@ namespace ExampleProjectDDD.Domain.Entities.CourseManagment
                 throw new CourseAttendeeExistException();
             }
             _coursAttendees.AddLast(courseAttendee);
+            RaiseDomainEvent(new AddCourseAttendeeEvent(courseAttendee));
         }
 
         public CourseAttendee GetCourseAttendee(BaseId courseAttendeeId)
