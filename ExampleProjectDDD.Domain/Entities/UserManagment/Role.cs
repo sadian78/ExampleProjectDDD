@@ -15,6 +15,6 @@ namespace ExampleProjectDDD.Domain.Entities.UserManagment
         public Role(BaseId id):base(id) {  }
 
         private RoleName _roleName;
-        private LinkedList<UserRole> _userRoles { get; set; }
+        private LinkedList<UserRole> _userRoles;
     }
 }

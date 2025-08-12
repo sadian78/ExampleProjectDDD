@@ -1,16 +1,24 @@
-﻿using ExampleProjectDDD.Domain.Entities.CourseManagment;
-using ExampleProjectDDD.Domain.Entities.UserManagment;
+﻿using ExampleProjectDDD.Domain.Primitives;
+using ExampleProjectDDD.Domain.ValueObject;
+using ExampleProjectDDD.Domain.ValueObject.Invoice;
 
 namespace ExampleProjectDDD.Domain.Entities.PaymentManagment
 {
-    public class Invoice
+    public class Invoice : BaseEntity
     {
-        public int ID { get; set; }
-        public decimal Amount {  get; set; }
-        public DateTime Date { get; set; }
-        public Guid UserID { get; set; }
-        public User User { get; set; }
-        public Course Course { get; set; }
-        public int CourseID {  get; set; }
+       
+        public Invoice(BaseId id,Amount amount, DateTime date, BaseId userID, BaseId courseID):base(id)
+        {
+            _amount = amount;
+            _date = date;
+            _userID = userID;
+            _courseID = courseID;
+        }
+        public Invoice(BaseId id) : base(id) { }
+
+        private Amount _amount;
+        private DateTime _date;
+        private BaseId _userID;
+        private BaseId _courseID;
     }
 }
