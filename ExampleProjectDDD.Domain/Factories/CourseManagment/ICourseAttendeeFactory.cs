@@ -5,6 +5,6 @@ namespace ExampleProjectDDD.Domain.Factories.CourseManagment
 {
     public interface ICourseAttendeeFactory
     {
-        CourseAttendee CreateCourseAttendee(BaseId id, BaseId userID, BaseId courseID)
+        CourseAttendee CreateCourseAttendee(BaseId id, BaseId userID, BaseId courseID);
     }
 }
