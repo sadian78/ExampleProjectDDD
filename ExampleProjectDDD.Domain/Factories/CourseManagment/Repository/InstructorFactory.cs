@@ -10,5 +10,15 @@ namespace ExampleProjectDDD.Domain.Factories.CourseManagment.Repository
         {
             return new Instructor(name, bio, id);
         }
+
+        public Instructor CreateInstructor(Name name, Bio bio, BaseId id, Exprience exprience)
+        {
+            return new Instructor(name, bio, id,exprience);
+        }
+
+        public Instructor CreateInstructor(Name name, Bio bio, BaseId id, Exprience exprience, Rating rating)
+        {
+            return new Instructor(name, bio, id,exprience,rating);
+        }
     }
 }

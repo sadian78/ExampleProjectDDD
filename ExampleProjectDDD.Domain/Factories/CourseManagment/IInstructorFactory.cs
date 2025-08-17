@@ -7,5 +7,7 @@ namespace ExampleProjectDDD.Domain.Factories.CourseManagment
     public interface IInstructorFactory
     {
         Instructor CreateInstructor(Name name, Bio bio, BaseId id);
+        Instructor CreateInstructor(Name name, Bio bio, BaseId id, Exprience exprience);
+        Instructor CreateInstructor(Name name, Bio bio, BaseId id, Exprience exprience, Rating rating);
     }
 }
