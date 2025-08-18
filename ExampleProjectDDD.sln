@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36202.13 d17.14
+VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleProjectDDD.Domain", "ExampleProjectDDD.Domain\ExampleProjectDDD.Domain.csproj", "{8F20C3FC-8BDC-444D-99B8-E071734FE8B3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleProjectDDD.Shared.Abstraction", "ExampleProjectDDD.Shared.Abstraction\ExampleProjectDDD.Shared.Abstraction.csproj", "{843ECB25-9DB0-4EB8-A62E-5BF74C1AEAA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleProjectDDD.Application", "ExampleProjectDDD.Application\ExampleProjectDDD.Application.csproj", "{001FFF5C-1BAE-44AD-B60A-07B0092D2BF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{843ECB25-9DB0-4EB8-A62E-5BF74C1AEAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{843ECB25-9DB0-4EB8-A62E-5BF74C1AEAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{843ECB25-9DB0-4EB8-A62E-5BF74C1AEAA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{001FFF5C-1BAE-44AD-B60A-07B0092D2BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{001FFF5C-1BAE-44AD-B60A-07B0092D2BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{001FFF5C-1BAE-44AD-B60A-07B0092D2BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{001FFF5C-1BAE-44AD-B60A-07B0092D2BF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
