@@ -7,11 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
+    <Folder Include="Commands\PaymentManagment\" />
     <Folder Include="DomainEvents\" />
     <Folder Include="DTOs\" />
     <Folder Include="Sevices\" />
     <Folder Include="Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExampleProjectDDD.Domain\ExampleProjectDDD.Domain.csproj" />
+    <ProjectReference Include="..\ExampleProjectDDD.Shared.Abstraction\ExampleProjectDDD.Shared.Abstraction.csproj" />
   </ItemGroup>
 
 </Project>

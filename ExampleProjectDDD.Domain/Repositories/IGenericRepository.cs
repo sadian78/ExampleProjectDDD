@@ -8,6 +8,7 @@ namespace ExampleProjectDDD.Domain.Repositories
         Task CreateAsync(TEntity entity);
         Task UpdateAsync(TEntity entity);
         Task<TEntity> GetAsync(BaseId Id);
+        Task<IReadOnlyList<TEntity>> GetAllAsync();
         Task DeleteAsync(TEntity entity);
     }
 }
