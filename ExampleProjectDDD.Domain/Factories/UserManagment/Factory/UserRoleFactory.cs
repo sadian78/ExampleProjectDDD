@@ -5,9 +5,9 @@ namespace ExampleProjectDDD.Domain.Factories.UserManagment.Repository
 {
     public class UserRoleFactory : IUserRoleFactory
     {
-        public UserRole CreateUserRoleUserRole(BaseId id, BaseId userID, BaseId roleID)
+        public UserRole CreateUserRoleUserRole( BaseId userID, BaseId roleID)
         {
-            return new UserRole(id, userID, roleID);
+            return new UserRole( userID, roleID);
         }
     }
 }

@@ -5,6 +5,6 @@ namespace ExampleProjectDDD.Domain.Factories.UserManagment
 {
     public interface IUserRoleFactory
     {
-        UserRole CreateUserRoleUserRole(BaseId id, BaseId userID, BaseId roleID);
+        UserRole CreateUserRoleUserRole(BaseId userID, BaseId roleID);
     }
 }

@@ -6,5 +6,7 @@
         public string Title {  get; set; }
         public Guid CourseId { get; set; }
         public CourseReadModel Course { get; set; }
+        public Guid CourseCatalogId {  get; set; }
+        public CourseCatalogReadModel CourseCatalog { get; set; }
     }
 }
