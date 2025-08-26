@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace ExampleProjectDDD.Infrastructure.Configes.ConfigReadModels
 {
-    internal sealed partial class UserConfigurationReadModel : IEntityTypeConfiguration<UserReadModel>,
+    internal sealed partial class ConfigurationReadModel : IEntityTypeConfiguration<UserReadModel>,
         IEntityTypeConfiguration<RoleReadModel>, IEntityTypeConfiguration<UserRoleReadModel>
     {
         public void Configure(EntityTypeBuilder<UserReadModel> builder)

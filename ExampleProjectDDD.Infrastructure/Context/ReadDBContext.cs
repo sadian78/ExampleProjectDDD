@@ -1,4 +1,5 @@
-﻿using ExampleProjectDDD.Infrastructure.Models.CourseManagment;
+﻿using ExampleProjectDDD.Infrastructure.Configes.ConfigReadModels;
+using ExampleProjectDDD.Infrastructure.Models.CourseManagment;
 using ExampleProjectDDD.Infrastructure.Models.PaymentManagment;
 using ExampleProjectDDD.Infrastructure.Models.UserManagmenet;
 using Microsoft.EntityFrameworkCore;
@@ -32,7 +33,25 @@ namespace ExampleProjectDDD.Infrastructure.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
+            var configuration = new ConfigurationReadModel();
+
+            #region Course mannagment configuration
+            modelBuilder.ApplyConfiguration<CourseAttendeeReadModel>(configuration);
+            modelBuilder.ApplyConfiguration<LessonReadModel>(configuration);
+            modelBuilder.ApplyConfiguration<InstructorReadModel>(configuration);
+            modelBuilder.ApplyConfiguration<CourseReadModel>(configuration);
+            modelBuilder.ApplyConfiguration<CourseCatalogReadModel>(configuration);
+            #endregion
+
+            #region Payment manegmant configration
+            modelBuilder.ApplyConfiguration<InvoiceReadModel>(configuration);
+            #endregion
+
+            #region User managment configuration
+            modelBuilder.ApplyConfiguration<UserReadModel>(configuration);
+            modelBuilder.ApplyConfiguration<RoleReadModel>(configuration);
+            modelBuilder.ApplyConfiguration<UserReadModel>(configuration);
+            #endregion
         }
     }
 }
