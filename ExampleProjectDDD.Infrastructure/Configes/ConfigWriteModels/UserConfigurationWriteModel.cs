@@ -1,4 +1,5 @@
-﻿using ExampleProjectDDD.Domain.Entities.UserManagment;
+﻿using ExampleProjectDDD.Domain.Entities.CourseManagment;
+using ExampleProjectDDD.Domain.Entities.UserManagment;
 using ExampleProjectDDD.Domain.ValueObject;
 using ExampleProjectDDD.Domain.ValueObject.User;
 using Microsoft.EntityFrameworkCore;
@@ -43,6 +44,10 @@ namespace ExampleProjectDDD.Infrastructure.Configes.ConfigWriteModels
                 .IsRequired();
 
             builder.HasMany(typeof(UserRole), "_userRoles")
+                .WithOne()
+                .HasForeignKey("_userID");
+
+            builder.HasMany(typeof(CourseAttendee), "_courseAttendees")
                 .WithOne()
                 .HasForeignKey("_userID");
 

@@ -1,4 +1,5 @@
-﻿using ExampleProjectDDD.Domain.ValueObject;
+﻿using ExampleProjectDDD.Domain.Entities.CourseManagment;
+using ExampleProjectDDD.Domain.ValueObject;
 using ExampleProjectDDD.Domain.ValueObject.User;
 using ExampleProjectDDD.Shared.Abstraction.Domain;
 
@@ -20,5 +21,6 @@ namespace ExampleProjectDDD.Domain.Entities.UserManagment
         private Email _email;
         private bool IsConfirmed;
         private LinkedList<UserRole> _userRoles;
+        private LinkedList<CourseAttendee> _courseAttendees;
     }
 }
