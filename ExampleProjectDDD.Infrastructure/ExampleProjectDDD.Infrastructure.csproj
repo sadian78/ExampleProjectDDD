@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configes\ConfigWriteModels\" />
+    <ProjectReference Include="..\ExampleProjectDDD.Domain\ExampleProjectDDD.Domain.csproj" />
   </ItemGroup>
 
 </Project>

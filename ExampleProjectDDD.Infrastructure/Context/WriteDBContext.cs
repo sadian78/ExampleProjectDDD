@@ -1,6 +1,12 @@
-﻿namespace ExampleProjectDDD.Infrastructure.Context
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace ExampleProjectDDD.Infrastructure.Context
 {
-    internal class WriteDBContext
+    internal sealed class WriteDBContext : DbContext
     {
+        public WriteDBContext(DbContextOptions<WriteDBContext> options) : base(options)
+        {
+
+        }
     }
 }

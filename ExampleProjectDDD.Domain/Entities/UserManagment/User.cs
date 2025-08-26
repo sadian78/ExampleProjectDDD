@@ -15,10 +15,10 @@ namespace ExampleProjectDDD.Domain.Entities.UserManagment
         }
         public User() { }
 
-        private UserName _userName { get; set; }
-        public PasswordHash _passwordHash { get; set; }
-        public Email _email { get; set; }
-        public bool IsConfirmed { get; set; }
-        private LinkedList<UserRole> _userRoles { get; set; }
+        private UserName _userName;
+        private PasswordHash _passwordHash;
+        private Email _email;
+        private bool IsConfirmed;
+        private LinkedList<UserRole> _userRoles;
     }
 }
