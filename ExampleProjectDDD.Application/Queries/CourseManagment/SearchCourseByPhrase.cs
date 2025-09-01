@@ -5,5 +5,6 @@ namespace ExampleProjectDDD.Application.Queries.CourseManagment
 {
     public class SearchCourseByPhrase:IQuery<CouesesListDTO>
     {
+        public string Phrase {  get; set; }
     }
 }

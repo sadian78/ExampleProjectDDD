@@ -8,4 +8,10 @@ namespace ExampleProjectDDD.Application.Exceptions
         {
         }
     }
+    public class UserNameIsExistException : CourseManagementException
+    {
+        public UserNameIsExistException() : base("UserName is Exist")
+        {
+        }
+    }
 }

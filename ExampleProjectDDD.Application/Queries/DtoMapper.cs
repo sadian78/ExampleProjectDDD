@@ -7,7 +7,7 @@ namespace ExampleProjectDDD.Application.Queries
 {
     internal static class DtoMapper
     {
-        public static CourseDTO ToDTO(CourseReadModel course)
+        public static CourseDTO ToDTO(this CourseReadModel course)
         {
             return new CourseDTO()
             {
@@ -18,7 +18,7 @@ namespace ExampleProjectDDD.Application.Queries
                 Price = course.Price
             };
         }
-        public static UserDTO ToDTO(UserReadModel userReadModel)
+        public static UserDTO ToDTO(this UserReadModel userReadModel)
         {
             return new UserDTO()
             {
