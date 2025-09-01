@@ -1,12 +1,12 @@
 ﻿using ExampleProjectDDD.Infrastructure.Configes.ConfigReadModels;
-using ExampleProjectDDD.Infrastructure.Models.CourseManagment;
-using ExampleProjectDDD.Infrastructure.Models.PaymentManagment;
-using ExampleProjectDDD.Infrastructure.Models.UserManagmenet;
+using ExampleProjectDDD.Application.Models.CourseManagment;
+using ExampleProjectDDD.Application.Models.PaymentManagment;
+using ExampleProjectDDD.Application.Models.UserManagmenet;
 using Microsoft.EntityFrameworkCore;
 
 namespace ExampleProjectDDD.Infrastructure.Context
 {
-    internal sealed class ReadDBContext:DbContext
+    public sealed class ReadDBContext:DbContext
     {
         public ReadDBContext(DbContextOptions<ReadDBContext> options):base(options)
         {

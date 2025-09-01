@@ -1,7 +1,7 @@
-﻿using ExampleProjectDDD.Infrastructure.Models.CourseManagment;
-using ExampleProjectDDD.Infrastructure.Models.UserManagmenet;
+﻿using ExampleProjectDDD.Application.Models.CourseManagment;
+using ExampleProjectDDD.Application.Models.UserManagmenet;
 
-namespace ExampleProjectDDD.Infrastructure.Models.PaymentManagment
+namespace ExampleProjectDDD.Application.Models.PaymentManagment
 {
     public class InvoiceReadModel : BaseReadModel
     {

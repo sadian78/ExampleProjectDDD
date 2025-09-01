@@ -1,4 +1,4 @@
-﻿using ExampleProjectDDD.Infrastructure.Models.UserManagmenet;
+﻿using ExampleProjectDDD.Application.Models.UserManagmenet;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

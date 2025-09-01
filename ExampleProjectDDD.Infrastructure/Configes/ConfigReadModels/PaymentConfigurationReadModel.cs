@@ -1,4 +1,4 @@
-﻿using ExampleProjectDDD.Infrastructure.Models.PaymentManagment;
+﻿using ExampleProjectDDD.Application.Models.PaymentManagment;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

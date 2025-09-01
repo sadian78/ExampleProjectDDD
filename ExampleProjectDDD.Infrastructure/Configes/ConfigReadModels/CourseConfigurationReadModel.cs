@@ -1,4 +1,4 @@
-﻿using ExampleProjectDDD.Infrastructure.Models.CourseManagment;
+﻿using ExampleProjectDDD.Application.Models.CourseManagment;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

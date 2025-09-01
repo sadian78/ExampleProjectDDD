@@ -1,6 +1,6 @@
-﻿using ExampleProjectDDD.Infrastructure.Models.UserManagmenet;
+﻿using ExampleProjectDDD.Application.Models.UserManagmenet;
 
-namespace ExampleProjectDDD.Infrastructure.Models.CourseManagment
+namespace ExampleProjectDDD.Application.Models.CourseManagment
 {
     public class CourseAttendeeReadModel : BaseReadModel
     {

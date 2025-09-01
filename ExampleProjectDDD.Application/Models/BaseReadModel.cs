@@ -1,4 +1,4 @@
-﻿namespace ExampleProjectDDD.Infrastructure.Models
+﻿namespace ExampleProjectDDD.Application.Models
 {
     public class BaseReadModel
     {

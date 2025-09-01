@@ -1,4 +1,4 @@
-﻿namespace ExampleProjectDDD.Infrastructure.Models.CourseManagment
+﻿namespace ExampleProjectDDD.Application.Models.CourseManagment
 {
     public class CourseCatalogReadModel : BaseReadModel
     {

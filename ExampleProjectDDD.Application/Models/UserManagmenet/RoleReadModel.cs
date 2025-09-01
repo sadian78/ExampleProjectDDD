@@ -1,4 +1,4 @@
-﻿namespace ExampleProjectDDD.Infrastructure.Models.UserManagmenet
+﻿namespace ExampleProjectDDD.Application.Models.UserManagmenet
 {
     public class RoleReadModel : BaseReadModel
     {
