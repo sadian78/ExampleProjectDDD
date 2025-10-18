@@ -25,5 +25,9 @@ namespace ExampleProjectDDD.Shared.Abstraction.Domain
             }
             _events.Add(@event);
         }
+        public void ClearEvents()
+        {
+            _events.Clear();
+        }
     }
 }
